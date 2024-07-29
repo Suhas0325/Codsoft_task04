@@ -1,0 +1,58 @@
+.tabs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 20px;
+    
+}
+
+.total-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 180px;
+    font-family: Poppins;
+    text-align: center;
+   
+}
+
+
+.product_image{
+    height: 150px;
+    width: 150px;
+}
+.Quants{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 20px;
+    font-family: Poppins;
+}
+.Quants img{
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.total-price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 200px;
+}
+
+.items-all{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.bin{
+    height: 30px;
+    width: 30px;
+}
