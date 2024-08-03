@@ -16,8 +16,7 @@ const Cart = () => {
 
     return (
 
-        <div>
-          <h1></h1>
+        <div className='cartpage'>
         {cartItems.length === 0 ? (
              <p>Your cart is empty</p>
         ) : (
@@ -27,20 +26,21 @@ const Cart = () => {
                     <tr>Name</tr>
                     <tr>Quantity</tr>
                     <tr>Price</tr>
+                    <tr></tr>
                   </table>
                   <div className='items-all'>
                   {cartItems.map((item)=>(
                          <div className='total-details'>
                             <img src={item.image} alt={item.name} className='product_image'></img>
-                            <p>{item.name}</p>
-                            <div className='Quants'>
+                            <p style={{marginLeft: "200px"}}>{item.name}</p>
+                            <div className='Quants' style={{marginLeft: "170px"}}>
                                 <img src={minus} onClick={() => dispatch(decreaseQuantity(item))}></img>
                                 <span>{item.qty}</span>
                                 <img src={plus} onClick={() => dispatch(addToCart(item))}></img>
                                 
                             </div>
-                            <p>${item.price*item.qty}</p>
-                            <img src={bin} alt='bin' onClick={()=>dispatch(removeFromCart(item))} className='bin'></img>
+                            <p style={{marginLeft: "270px"}}>${item.price*item.qty}</p>
+                            <img src={bin} style={{marginLeft: "200px"}} alt='bin' onClick={()=>dispatch(removeFromCart(item))} className='bin'></img>
                          </div>
 
                          

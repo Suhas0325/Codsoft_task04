@@ -12,7 +12,7 @@ const Nav = () => {
             </Link>
         </div>
         <div className='cart'>
-        <Link to="/cart">
+        <Link to="/cart"  style={{textDecoration: "none", color: "black"}}>
                     <img src={cart} alt='cart'></img>
                     <span>{cartItems.length}</span>
                 </Link>
